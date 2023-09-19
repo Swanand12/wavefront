@@ -1,16 +1,284 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans:wght@600&family=Roboto:wght@100;300;400;500;600;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* #navbar */
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
+.padding-16px {
+  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.sidebar{
-  
+/* #navbar */
+/* Add your styles in a CSS file or within a style tag in your React component */
+
+.navbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e59a9;
+  color: #fff;
+  border: none;
+  padding: 10px 60px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+.logo {
+  width: 225px;
+}
+
+.menu {
+  width: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 15px, 0px;
+}
+
+.header-menu:hover {
+  transition: all 0.5s ease;
+  color: #6ec1e4;
+}
+
+a {
+  color: #ffffff;
+  /* padding-right: 4px; */
+  text-decoration: none;
+}
+
+i {
+  margin-left: 4px;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+/* i:hover{
+  color:#6EC1E4;
+} */
+/* a i :hover{
+  color: #1e59a9;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+  /* margin: 16px; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #6ec1e4;
+  border-top: 2px solid black;
+  display: none;
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: black;
+  border: 1px solid #ffffff;
+}
+
+ul li:hover {
+  color: #1e59a9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+li {
+  width: 200px;
+}
+
+.dropdown:hover ul {
+  display: block;
+}
+
+/* ABOUT */
+
+.about {
+  position: relative;
+  overflow: hidden;
+}
+
+.about img {
+  width: 100%;
+}
+
+.overview {
+  display: flex;
+  margin: 3rem 2rem 2rem;
+}
+
+.overview-content {
+  width: 50%;
+}
+
+.overview h3 {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 16px;
+}
+
+.overview p {
+  font-family: "Roboto", sans-serif;
+  color: #7a7a7a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.overview-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.overview-img img {
+  width: 70%;
+}
+
+/* Footer */
+
+.padd-btm-16px {
+  padding-bottom: 16px;
+}
+
+.footer {
+  width: 100%;
+  /* height: auto; */
+  font-family: "Roboto", sans-serif;
+  background-color: #add8e6;
+  /* padding: 2px; */
+  list-style: none;
+}
+
+.container {
+  margin: 0px 32px;
+  display: flex;
+}
+
+h4 {
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer li {
+  /* padding: 16px,0px; */
+  width: 400px;
+  margin: 0.5rem 0rem;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.footer span {
+  margin-left: 6px;
+}
+
+.footer i {
+  font-size: 14px;
+}
+
+.head-office {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-office-links {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.bg-i {
+  /* background-color: red; */
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  /* right: 1px; */
+}
+
+.bg-i-facebook {
+  background-color: #3b5998;
+}
+
+.bg-i-instagram {
+  background-color: #262626;
+}
+
+.bg-i-twitter {
+  background-color: #1da1f2;
+}
+
+.bg-i-linkedin {
+  background-color: #0077b5;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.association {
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ass-img {
+  display: flex;
+}
+
+.ass-img-col1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.ass-img-col1 p {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.ass-img-col2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.reach-us {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.association img {
+  width: 90%;
+  height: 48px;
+  margin: 0 32px 32px 0;
+}
+
+.copywright {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 300;
 }

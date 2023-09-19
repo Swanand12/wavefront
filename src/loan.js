@@ -2,14 +2,14 @@ import React from "react";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
 
-function Home() {
-  return (
-    <>
-      <Navbar />
+function Loan() {
+    return(
+        <>
+        <Navbar/>
 
-      <Footer />
-    </>
-  );
+        <Footer/>
+        </>
+    )
 }
 
-export default Home;
+export default Loan;
