@@ -14,7 +14,6 @@
 }
 
 /* #navbar */
-/* Add your styles in a CSS file or within a style tag in your React component */
 
 .navbar {
   height: 75px;
@@ -51,7 +50,7 @@
 
 a {
   color: #ffffff;
-  /* padding-right: 4px; */
+
   text-decoration: none;
 }
 
@@ -61,17 +60,10 @@ i {
   font-weight: 900;
 }
 
-/* i:hover{
-  color:#6EC1E4;
-} */
-/* a i :hover{
-  color: #1e59a9;
-} */
-
 ul {
   list-style: none;
   padding: 0;
-  /* margin: 16px; */
+
   position: absolute;
   top: 100%;
   left: 0;
@@ -154,10 +146,10 @@ li {
 
 .footer {
   width: 100%;
-  /* height: auto; */
+
   font-family: "Roboto", sans-serif;
   background-color: #add8e6;
-  /* padding: 2px; */
+
   list-style: none;
 }
 
@@ -173,7 +165,6 @@ h4 {
 }
 
 .footer li {
-  /* padding: 16px,0px; */
   width: 400px;
   margin: 0.5rem 0rem;
   font-weight: 300;
@@ -197,11 +188,9 @@ h4 {
 
 .head-office-links {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .bg-i {
-  /* background-color: red; */
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -210,7 +199,6 @@ h4 {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  /* right: 1px; */
 }
 
 .bg-i-facebook {
