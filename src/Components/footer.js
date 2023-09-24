@@ -1,59 +1,74 @@
 import React from "react";
+import "./footer.css";
 // import "./images"
 function Footer() {
   return (
     <>
       <div className="footer">
         <div className="container">
-          <div className="head-office">
-            <h4>HEAD OFFICE</h4>
-            <div className="padd-btm-16px">
-              <li>Waterfront Capital Services LLP</li>
-              <li>10, Mehta Bhavan, Ground Floor,</li>
-              <li>Behind Saifee Hospital, Charni Road,</li>
-              <li>Mumbai 400 004, India</li>
+          <div className="container-1">
+            <div className="head-office box">
+              <h4>HEAD OFFICE</h4>
+              <div className="padd-btm-16px">
+                <li>Waterfront Capital Services LLP</li>
+                <li>10, Mehta Bhavan, Ground Floor,</li>
+                <li>Behind Saifee Hospital, Charni Road,</li>
+                <li>Mumbai 400 004, India</li>
+              </div>
+              <div className="padd-btm-16px">
+                <li>
+                  <i className="bi-telephone-fill"></i>
+                  <span>+91 22 4969 4083</span>
+                </li>
+                <li>
+                  <i className="fa fa-envelope"></i>
+                  <span>support@waterfrontcapital.in</span>
+                </li>
+              </div>
+              <div className="head-office-links">
+                <a href="www.facebook.com">
+                  <div className="bg-i bg-i-facebook">
+                    <i className="bi-facebook margin-0"></i>
+                  </div>
+                </a>
+                <a href="www.instagram.com">
+                  <div className="bg-i bg-i-instagram">
+                    <i className="bi-instagram margin-0"></i>
+                  </div>
+                </a>
+                <a href="www.twitter.com">
+                  <div className="bg-i bg-i-twitter">
+                    <i className="bi-twitter margin-0"></i>
+                  </div>
+                </a>
+                <a href="www.linkedin.com">
+                  <div className="bg-i bg-i-linkedin">
+                    <i className="bi-linkedin margin-0"></i>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div className="padd-btm-16px">
-              <li>
-                <i className="bi-telephone-fill"></i>
-                <span>+91 22 4969 4083</span>
-              </li>
-              <li>
-                <i className="fa fa-envelope"></i>
-                <span>support@waterfrontcapital.in</span>
-              </li>
-            </div>
-            <div className="head-office-links">
-              <div className="bg-i bg-i-facebook">
-                <i className="bi-facebook margin-0"></i>
-              </div>
-              <div className="bg-i bg-i-instagram">
-                <i className="bi-instagram margin-0"></i>
-              </div>
-              <div className="bg-i bg-i-twitter">
-                <i className="bi-twitter margin-0"></i>
-              </div>
-              <div className="bg-i bg-i-linkedin">
-                <i className="bi-linkedin margin-0"></i>
+            <div className="association box">
+              <h4>ASSOCIATION</h4>
+              <div className="ass-img">
+                <div className="ass-img-col1">
+                  <img src="ass-img1.jpeg" alt="ass-img1"></img>
+                  <img src="ass-img2.jpeg" alt="ass-img2"></img>
+                  <img src="ass-img3.jpeg" alt="ass-img3"></img>
+                </div>
+                <div className="ass-img-col1">
+                  <img src="ass-img4.jpeg" alt="ass-img4"></img>
+                  <img
+                    className="ass-img5"
+                    src="ass-img5.jpeg"
+                    alt="ass-img5"
+                  ></img>
+                  <p>& many more..</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="association">
-            <h4>ASSOCIATION</h4>
-            <div className="ass-img">
-              <div className="ass-img-col1">
-                <img src="ass-img1.jpeg" alt="ass-img1"></img>
-                <img src="ass-img2.jpeg" alt="ass-img2"></img>
-                <img src="ass-img3.jpeg" alt="ass-img3"></img>
-              </div>
-              <div className="ass-img-col1">
-                <img src="ass-img4.jpeg" alt="ass-img4"></img>
-                <img src="ass-img5.jpeg" alt="ass-img5"></img>
-                <p>& many more..</p>
-              </div>
-            </div>
-          </div>
-          <div className="reach-us">
+          <div className="reach-us box">
             <h4>REACH US</h4>
             <div className="padd-btm-16px">
               <h4>Jay Shah</h4>

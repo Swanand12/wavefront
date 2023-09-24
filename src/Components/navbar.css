@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  .menu-items {
+    padding-bottom: 25px;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  /* #navbar */
+  
+  .navbar {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e59a9;
+    color: #fff;
+    border: none;
+    padding: 10px 60px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    position: fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    /* position: relative; */
+  }
+  
+  .logo {
+    width: 225px;
+  }
+  /* 
+  .menu {
+    position: absolute;
+    width: 100%;
+  } */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 15px, 0px;
+  }
+  
+  .hover-blue:hover {
+    transition: all 0.5s ease;
+    color: #6ec1e4;}
+  
+  .navbar a {
+    color: #ffffff;
+  
+    text-decoration: none;
+  }
+  
+  .bi-chevron-down {
+    margin-left: 4px;
+    font-size: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    /* left: 0; */
+    background-color: #6ec1e4;
+    border-top: 2px solid black;
+    display: none;
+  }
+  
+  .navbar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: black;
+    border-bottom: 0.5px solid #ffffff;
+    box-shadow: black 3px;
+    box-sizing: border-box;
+  }
+  
+  .navbar ul li:hover {
+    color: #1e59a9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar li {
+    width: 200px;
+    position: relative;
+  color:black;
+  }
+  
+
+  .bi-chevron-right {
+    position: absolute;
+    right: 16px;
+  }
+  
+  .sub-dropdown {
+    left: 199px;
+    top: 0px;
+  }
+.submenu ul li{
+  color:black;
+}
+  .submenu:hover ul {
+    display: block;
+  }
+ 
+  .submenu-path:hover {
+    color: #1e59a9;
+  }
+  
+  .dropdown:hover .nav-submenu {
+    display: block;
+  }
+  
+  .bi-list{
+    display: none;
+  }
+  
+  @media(max-width:1113px){
+    .navbar{
+      display: flex;
+      flex-direction: column;
+      height: 142px;
+    }
+    .logo-img{
+        width:100% ;
+        display: flex;
+        justify-content: flex-start;
+    }
+ 
+   .menu{
+    width: 100%;
+   }
+  }
+  
+  

@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
-
+import Whatsapp from "./Components/whatsapp";
 function About() {
   return (
     <>
       <Navbar />
       <div className="about">
-        <img src="about-img.png" alt="about-img"></img>
+        <img className="about-img" src="about-img.png" alt="about-img"></img>
         <div className="overview">
           <div className="overview-content">
             <h3>Overview</h3>
@@ -28,6 +28,7 @@ function About() {
           </div>
         </div>
       </div>
+      <Whatsapp/>
       <Footer />
     </>
   );
