@@ -15,10 +15,10 @@ function Wwu() {
       <Navbar />
       <div className="work-with-us">
         <div className="contents-col1">
-          <div className="box box-1">
-            <div className=" employment-heading" onClick={toggleDropdown}>
-              <i className="bi-chevron-down"> </i>
-              <h3>Employment</h3>
+          <div className="dropbox dropbox-1" onClick={toggleDropdown}>
+            <div className=" employment-heading" >
+              <i className="fa fa-chevron-down"> </i>
+              <h3 className="employment">Employment</h3>
             </div>
             {isOpen && (
               <ul className="employment-content">
@@ -46,10 +46,10 @@ function Wwu() {
               </ul>
             )}
           </div>
-          <div className="box box-2">
-            <div className=" internship-heading" onClick={toggleDropdown}>
-              <i className="bi-chevron-down"> </i>
-              <h3>Internship</h3>
+          <div className="dropbox dropbox-2" onClick={toggleDropdown}>
+            <div className=" internship-heading" >
+              <i className="fa fa-chevron-down"> </i>
+              <h3 className="internship">Internship</h3>
             </div>
             {isOpen && (
               <ul className="internship-content">
@@ -72,12 +72,12 @@ function Wwu() {
                   Make sure you always reflect how creative, dedicated and hard
                   working you are.
                 </li>
-                <br></br>{" "}
+                <br></br>
                 <li>Please avoid following descriptions in your resume;</li>
                 <br></br> <li>“I want to put my sincere efforts…..”</li>
-                <br></br> <li>“I co-relate my goals in sync with…”</li>{" "}
+                <br></br> <li>“I co-relate my goals in sync with…”</li>
                 <br></br>
-                <li>“I wish to give a kick start to my career..” etc</li>{" "}
+                <li>“I wish to give a kick start to my career..” etc</li>
                 <br></br>
                 <li>
                   We offer internship programs to students showing highest level
@@ -85,11 +85,11 @@ function Wwu() {
                 </li>
                 <br></br>
                 <li>
-                  {" "}
+               
                   Enjoy the work and make sure you keep no commitments apart
                   from us because we are going to keep you engaged 24*7.
                 </li>
-                <br></br>{" "}
+                <br></br>
                 <li>
                   We accept interns of all mentality, attitude, shapes and sizes
                   for any department be it design, marketing, finance,
@@ -98,10 +98,10 @@ function Wwu() {
               </ul>
             )}
           </div>
-          <div className="box box-3">
-            <div className=" referral-partner-heading" onClick={toggleDropdown}>
-              <i className="bi-chevron-down"> </i>
-              <h3>Referral Partner</h3>
+          <div className="dropbox dropbox-3" onClick={toggleDropdown}>
+            <div className=" referral-partner-heading" >
+              <i className="fa fa-chevron-down"> </i>
+              <h3 className="referral_partner">Referral Partner</h3>
             </div>
             {isOpen && (
               <ul className="referral-partner-content">

@@ -5,59 +5,68 @@
   }
   
   .menu-items {
-    padding-bottom: 25px;
-    padding-top: 32px;
+    padding-bottom: 35px;
+    padding-top: 35px;
     padding-left: 16px;
     padding-right: 16px;
+    /* color: white; */
+    /* text-decoration: none; */
+  }
+  a{
+    text-decoration: none;
   }
   
   /* #navbar */
   
   .navbar {
-    height: 75px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1e59a9;
     color: #fff;
-    border: none;
-    padding: 10px 60px;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 60px;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     position: fixed;
     z-index: 1;
     box-sizing: border-box;
-    /* position: relative; */
+   font-weight: bold;
   }
   
   .logo {
-    width: 225px;
+    width: 250px;
   }
-  /* 
-  .menu {
-    position: absolute;
-    width: 100%;
-  } */
   
-  .dropdown {
+  .submenu-path {
+  color: black;
+  text-decoration: none;
+  }
+  
+  .navbar .dropdown {
     position: relative;
     display: inline-block;
     padding: 15px, 0px;
+    
   }
-  
-  .hover-blue:hover {
+  .hover{
+    color: white;
+    text-decoration: none;
+  }
+  .hover:hover {
     transition: all 0.5s ease;
     color: #6ec1e4;}
   
-  .navbar a {
+  /* .navbar a {
     color: #ffffff;
   
     text-decoration: none;
-  }
+  } */
   
-  .bi-chevron-down {
+  .fa-chevron-down {
     margin-left: 4px;
     font-size: 10px;
   }
@@ -65,23 +74,26 @@
   .navbar ul {
     list-style: none;
     padding: 0;
-    width: 200px;
+    width: 230px;
     position: absolute;
     top: 100%;
     /* left: 0; */
     background-color: #6ec1e4;
     border-top: 2px solid black;
     display: none;
+    font-size: 16px;
   }
   
   .navbar ul li {
-    padding: 10px;
+    font-size: 16px;
+    padding: 15px 13px;
     cursor: pointer;
     transition: background-color 0.2s;
     color: black;
     border-bottom: 0.5px solid #ffffff;
     box-shadow: black 3px;
     box-sizing: border-box;
+  
   }
   
   .navbar ul li:hover {
@@ -91,19 +103,19 @@
   }
   
   .navbar li {
-    width: 200px;
+    width: 230px;
     position: relative;
   color:black;
   }
   
 
-  .bi-chevron-right {
+  .fa-chevron-right {
     position: absolute;
     right: 16px;
   }
   
   .sub-dropdown {
-    left: 199px;
+    left: 230px;
     top: 0px;
   }
 .submenu ul li{
@@ -121,25 +133,36 @@
     display: block;
   }
   
-  .bi-list{
+  /* .fa-list{
     display: none;
-  }
+  } */
   
-  @media(max-width:1113px){
+  @media(max-width:1229px){
     .navbar{
       display: flex;
       flex-direction: column;
       height: 142px;
+      padding-top: 10px;
+     /* flex-wrap: wrap-reverse; */
     }
     .logo-img{
-        width:100% ;
+        /* width:100% ; */
         display: flex;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
  
    .menu{
+    display: flex;
+    justify-content: center;
     width: 100%;
    }
+
+   .menu-items {
+    padding-bottom: 13px;
+    
+    /* color: white; */
+    /* text-decoration: none; */
+  }
   }
   
   

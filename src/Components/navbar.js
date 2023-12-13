@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "./navbar.css"
+import "./navbar.css";
+// import Navbar1 from "./navbar1";
+// import navbarResponsive from "./navbar-responsive";
+// import Navbar1 from "./navbar-responsive";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(true);
 
@@ -15,18 +18,19 @@ function Navbar() {
             <img className="logo" src="logo.png" alt="logo" />
           </a>
         </div>
-        <div className="menu-icon"><i className="bi-list"></i></div>
+        
         <div className="menu ">
     
-            
+           
           <a className="menu-items" href="/">
-            <div className="dropdown hover-blue ">HOME</div>{" "}
+            <div className="dropdown hover ">HOME</div>{" "}
           </a>
+          
           <div className="dropdown">
             <a onClick={toggleDropdown} href="/about">
-              <div className="hover-blue menu-items">
+              <div className="hover menu-items">
                 ABOUT US
-                <i className="bi-chevron-down"></i>
+                <i className="fa fa-chevron-down"></i>
               </div>
             </a>
 
@@ -42,10 +46,10 @@ function Navbar() {
             <a href="/investments">
               <div
                 onClick={toggleDropdown}
-                className="hover-blue menu-items"
+                className="hover menu-items"
               >
                 INVESTMENTS
-                <i className="bi-chevron-down"></i>
+                <i className="fa fa-chevron-down"></i>
               </div>
             </a>
 
@@ -54,7 +58,7 @@ function Navbar() {
                 <li onClick={toggleDropdown} className="submenu">
                   <a className="submenu-path"   href="/equity">
                     Equity
-                    <i className="bi-chevron-right"></i>
+                    <i className="fa fa-chevron-right"></i>
                   </a>
                   {isOpen && (
                     <ul className="sub-dropdown">
@@ -71,7 +75,7 @@ function Navbar() {
                 </li>
 
                 <li onClick={toggleDropdown} className="submenu">
-                <a className="submenu-path" href="/fixed-income"> Fixed Income<i className="bi-chevron-right"></i></a>
+                <a className="submenu-path" href="/fixed-income"> Fixed Income<i className="fa fa-chevron-right"></i></a>
                   {isOpen && (
                     <ul className="sub-dropdown">
                       <li>Bonds</li>
@@ -85,7 +89,7 @@ function Navbar() {
                   )}{" "}
                 </li>
                 <li onClick={toggleDropdown} className="submenu">
-                <a className="submenu-path" href="/insurance"> Insurance<i className="bi-chevron-right"></i></a>
+                <a className="submenu-path" href="/insurance"> Insurance<i className="fa fa-chevron-right"></i></a>
                   {isOpen && (
                     <ul className="sub-dropdown">
                       <li>Term Insurance</li>
@@ -99,7 +103,7 @@ function Navbar() {
                   )}
                 </li>
                 <li onClick={toggleDropdown} className="submenu">
-                <a className="submenu-path" href="/real-estate">Real Estate<i className="bi-chevron-right"></i></a>
+                <a className="submenu-path" href="/real-estate">Real Estate<i className="fa fa-chevron-right"></i></a>
                   {isOpen && (
                     <ul className="sub-dropdown">
                       <li>Adivisory</li>
@@ -112,7 +116,7 @@ function Navbar() {
                   )}
                 </li>
                 <li onClick={toggleDropdown} className="submenu">
-                <a className="submenu-path" href="/residency-programs">Residency Programs<i className="bi-chevron-right"></i></a>
+                <a className="submenu-path" href="/residency-programs">Residency Programs<i className="fa fa-chevron-right"></i></a>
                   {isOpen && (
                     <ul className="sub-dropdown">
                       <li>Eb5 (USA)</li>
@@ -124,7 +128,7 @@ function Navbar() {
                   )}
                 </li>
                 <li onClick={toggleDropdown} className="submenu">
-                <a className="submenu-path" href="/succession-planning">Succession Planning<i className="bi-chevron-right"></i></a>
+                <a className="submenu-path" href="/succession-planning">Succession Planning<i className="fa fa-chevron-right"></i></a>
                   {isOpen && (
                     <ul className="sub-dropdown">
                       <li>Wills</li>
@@ -139,9 +143,9 @@ function Navbar() {
           </div>
           <div className="dropdown">
             <a onClick={toggleDropdown} href="/loans">
-              <div className="hover-blue menu-items">
+              <div className="hover menu-items">
                 LOANS
-                <i className="bi-chevron-down"></i>
+                <i className="fa fa-chevron-down"></i>
               </div>
             </a>
 
@@ -160,9 +164,9 @@ function Navbar() {
           </div>
           <div className="dropdown">
             <a onClick={toggleDropdown} href="/work-with-us">
-              <div className="hover-blue  menu-items">
+              <div className="hover  menu-items">
                 WORK WITH US
-                <i className="bi-chevron-down"></i>
+                <i className="fa fa-chevron-down"></i>
               </div>
             </a>
             {isOpen && (
@@ -174,14 +178,20 @@ function Navbar() {
             )}
           </div>
           <a className="menu-items" href="/reach-us">
-            <div className="dropdown hover-blue">REACH US</div>{" "}
+            <div className="dropdown hover">REACH US</div>{" "}
           </a>
           <a className="menu-items" href="/client-login">
-            <div className="dropdown hover-blue">CLIENT LOGIN</div>{" "}
+            <div className="dropdown hover">CLIENT LOGIN</div>{" "}
           </a>
+          {/* <div onClick={()=><Navbar1/>} className="Hamburger-menu" > <i className="fa fa-list"></i></div> */}
+          {/* <button onClick={()=>{<Navbar1/>}}>Swanand</button> */}
+
         </div>
+       
       </div>
+    
     </>
   );
 }
+
 export default Navbar;

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Components/navbar";
 import Footer from "./Components/footer";
+import Whatsapp from "./Components/whatsapp";
 
 function ReachUs() {
   return (
@@ -44,7 +45,7 @@ function ReachUs() {
           </div>
         </div>
         <div className="container-2">
-          <h4 className="padd-btm-20px">Head Office</h4>
+          <h3 className="padd-btm-20px">Head Office</h3>
           <div className="padd-btm-20px">
             <li>Waterfront Capital Services LLP</li>
             <li>10, Mehta Bhavan, Ground Floor,</li>
@@ -53,7 +54,7 @@ function ReachUs() {
           </div>
           <div className="padd-btm-20px">
             <li>
-              <i className="bi-telephone-fill"></i>
+              <i className="fa fa-phone"></i>
               +91 22 4969 4083
             </li>
             <li>
@@ -63,9 +64,9 @@ function ReachUs() {
           </div>
 
           <div className="padd-btm-20px">
-            <h4 className="padd-btm-20px">Jay Shah</h4>
+            <h3 className="padd-btm-20px">Jay Shah</h3>
             <li>
-              <i className="bi-telephone-fill"></i>
+              <i className="fa fa-phone"></i>
               +91 99875 42828
             </li>
             <li>
@@ -74,9 +75,9 @@ function ReachUs() {
             </li>
           </div>
           <div>
-            <h4 className="padd-btm-20px">Piyush Kothari</h4>
+            <h3 className="padd-btm-20px">Piyush Kothari</h3>
             <li>
-              <i className="bi-telephone-fill"></i>
+              <i className="fa fa-phone"></i>
               +91 89760 21948
             </li>
             <li>
@@ -86,6 +87,7 @@ function ReachUs() {
           </div>
         </div>
       </div>
+      <Whatsapp />
       <Footer />
     </>
   );

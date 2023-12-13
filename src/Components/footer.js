@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+
 // import "./images"
 function Footer() {
   return (
@@ -17,7 +18,7 @@ function Footer() {
               </div>
               <div className="padd-btm-16px">
                 <li>
-                  <i className="bi-telephone-fill"></i>
+                  <i className="fa fa-phone"></i>
                   <span>+91 22 4969 4083</span>
                 </li>
                 <li>
@@ -27,23 +28,23 @@ function Footer() {
               </div>
               <div className="head-office-links">
                 <a href="www.facebook.com">
-                  <div className="bg-i bg-i-facebook">
-                    <i className="bi-facebook margin-0"></i>
+                  <div className="bg-i facebook">
+                    <i className="fa fa-facebook margin-0"></i>
                   </div>
                 </a>
                 <a href="www.instagram.com">
-                  <div className="bg-i bg-i-instagram">
-                    <i className="bi-instagram margin-0"></i>
+                  <div className="bg-i instagram">
+                    <i className="fa fa-instagram margin-0"></i>
                   </div>
                 </a>
                 <a href="www.twitter.com">
-                  <div className="bg-i bg-i-twitter">
-                    <i className="bi-twitter margin-0"></i>
+                  <div className="bg-i twitter">
+                    <i className="fa fa-twitter margin-0"></i>
                   </div>
                 </a>
                 <a href="www.linkedin.com">
-                  <div className="bg-i bg-i-linkedin">
-                    <i className="bi-linkedin margin-0"></i>
+                  <div className="bg-i linkedin">
+                    <i className="fa fa-linkedin margin-0"></i>
                   </div>
                 </a>
               </div>
@@ -73,7 +74,7 @@ function Footer() {
             <div className="padd-btm-16px">
               <h4>Jay Shah</h4>
               <li>
-                <i className="bi-telephone-fill"></i>
+                <i className="fa fa-phone"></i>
                 <span>+91 99875 42828</span>
               </li>
               <li>
@@ -84,7 +85,7 @@ function Footer() {
             <div>
               <h4>Piyush Kothari</h4>
               <li>
-                <i className="bi-telephone-fill"></i>
+                <i className="fa fa-phone"></i>
                 <span>+91 89760 21948</span>
               </li>
               <li>
